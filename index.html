@@ -357,7 +357,7 @@
     <div class="section-header"><div class="section-cmd">whoami</div><div class="section-line"></div></div>
     <div class="terminal-box">
       <div class="content">
-        <div class="output-line"><span class="key">name</span>        <span class="comment">=</span>  <span class="val">"Santhosh Reddy"</span></div>
+        <div class="output-line"><span class="key">name</span>        <span class="comment">=</span>  <span class="val">"Gajjala Lakshmi Santhosh Reddy"</span></div>
         <div class="output-line"><span class="key">role</span>        <span class="comment">=</span>  <span class="val">"Cybersecurity Engineer"</span></div>
         <div class="output-line"><span class="key">university</span>  <span class="comment">=</span>  <span class="val">"Lovely Professional University -- B.Tech CSE"</span></div>
         <div class="output-line"><span class="key">location</span>    <span class="comment">=</span>  <span class="val">"Phagwara, Punjab, India"</span></div>
@@ -526,6 +526,18 @@
           <div class="ach-hint">&gt; click to view TryHackMe profile</div>
         </div>
       </div>
+      <div class="ach-item" onclick="openCertByKey('elevate','Elevate Labs -- Best Performer Certificate')">
+        <span class="ach-icon">🥇</span>
+        <div class="ach-body">
+          <div class="ach-text"><span class="ach-hl">BEST PERFORMER</span> at Elevate Labs Cybersecurity Internship -- Top 50 out of 740 interns.</div>
+          <div class="ach-hint">&gt; click to view certificate</div>
+        </div>
+      </div>
+      <div class="ach-item nc" style="cursor:default;">
+        <span class="ach-icon">💯</span>
+        <div class="ach-body"><div class="ach-text">Scored <span class="ach-hl">100% in Matriculation</span> (Little Flower, Kadapa) -- strong academic foundation from day one.</div></div>
+      </div>
+    </div>
   </div>
 </section>
 
@@ -571,7 +583,7 @@
     <div class="edu-list">
       <div class="edu-card">
         <div class="edu-top"><div class="edu-inst">Lovely Professional University</div><div class="edu-loc">Phagwara, Punjab</div></div>
-        <div class="edu-deg">B.Tech -- Computer Science &amp; Engineering <span class="edu-score">Currently in 3rd Year</span> | Pursuing</div>
+        <div class="edu-deg">B.Tech -- Computer Science &amp; Engineering &nbsp;|&nbsp; <span class="edu-score">CGPA 63.80</span></div>
         <div style="font-size:12px;color:var(--muted);margin-top:4px;">Aug 2023 -- Present</div>
       </div>
       <div class="edu-card">
@@ -886,7 +898,7 @@ var FS = {
   '~/certs':                    { type:'dir', children:['google-cloud.cert','oci-networking.cert','oci-ai.cert','oci-data.cert','elevate-labs.cert','deloitte.cert'] },
 };
 var FILES = {
-  'about.txt':      'name        = "Santhosh Reddy"\nrole        = "Cybersecurity Engineer"\nuniversity  = "Lovely Professional University"\nlocation    = "Phagwara, Punjab, India"\ntryhackme   = "Top 7% Globally"\nstatus      = "Open to Opportunities"',
+  'about.txt':      'name        = "Gajjala Lakshmi Santhosh Reddy"\nrole        = "Cybersecurity Engineer"\nuniversity  = "Lovely Professional University"\nlocation    = "Phagwara, Punjab, India"\ntryhackme   = "Top 7% Globally"\nstatus      = "Open to Opportunities"',
   'contact.txt':    'email     : gajjalasanthoshreddy@gmail.com\nmobile    : +91 93915 86013\ngithub    : github.com/santhoshreddy28\nlinkedin  : linkedin.com/in/santhoshreddy25\ntryhackme : tryhackme.com/p/g.l.santhoshreddy',
   'skills.txt':     'Languages  : Python, Bash, Java\nFrameworks : Node.js, Express.js, HTML/CSS\nTools      : Kali Linux, Nmap, Burp Suite, Metasploit, Wireshark\nCloud      : Google Cloud, Oracle OCI, AWS\nSpecialty  : Penetration Testing, Threat Analysis, Incident Response',
   'firewall.py':    '#!/usr/bin/env python3\n# Personal Firewall - Santhosh Reddy\nfrom scapy.all import *\nfrom tkinter import *\nimport logging\n\ndef packet_callback(pkt):\n    if IP in pkt:\n        src = pkt[IP].src\n        if is_blocked(src):\n            block_ip(src)\n            log_packet(pkt, blocked=True)',
